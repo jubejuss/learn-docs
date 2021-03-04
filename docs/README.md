@@ -1,8 +1,10 @@
 ---
 lang: et
-title: Selle lehe pealkiri on
-description: Siin lehel on sellised asjad
+title: Õpidokud
+description: Õpilaste tööde dokumentatsioon
 home: true
 ---
 
-# Tsau, ei midagi.
+# Siia lehele on koondatud ja koondatakse oma tööde dokumentatsioon.
+
+## [Pagaldamisjuhis. Klikka siin või menüüpunktil DOCS](vpdocs/README.md)

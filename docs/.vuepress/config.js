@@ -2,6 +2,8 @@ module.exports = {
 lang: "et",
 title: "Tere, Vuepress!",
 description: "See on mu esimene Vuepressi leht! Tegelt teine. Või kolmas.",
+base: "/learn-docs/",
+dest: "gh-pages",
 
   themeConfig: {
     logo: '/images/kass.png',

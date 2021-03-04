@@ -27,6 +27,8 @@ git commit -m "my first commit"
 
 ja siis jätka sealt, kus error sisse tuli.
 
+Kui tulid siia DOCS lehelt, siis [võid tagasi minna](../vpdocs/README.md/#deploy)
+
 ## Github pages
 
 Eelduseks on `config.js` failis seaded, et build kirjutatakse `github-pages` folderisse. ehk:
@@ -34,7 +36,7 @@ Eelduseks on `config.js` failis seaded, et build kirjutatakse `github-pages` fol
 ```bash
 module.exports = {
 ...
-dest: 'github-pages',
+dest: 'gh-pages',
 ...
 }
 ```
@@ -53,7 +55,7 @@ set -e
 npm run docs:build
 
 # navigate into the build output directory
-cd github-pages
+cd gh-pages
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
@@ -65,7 +67,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:sininimi/sinurepo.git master:gh-pages
+git push -f git@github.com:jubejuss/learn-docs.git master:gh-pages
 
 cd -
 ```

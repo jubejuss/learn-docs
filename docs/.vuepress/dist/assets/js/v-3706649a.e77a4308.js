@@ -1,1 +1,0 @@
-(self.webpackChunklearn_docs=self.webpackChunklearn_docs||[]).push([[88],{38:(e,t,a)=>{"use strict";a.r(t),a.d(t,{data:()=>l});const l={key:"v-3706649a",path:"/404.html",title:"",lang:"et",frontmatter:{layout:"404"},excerpt:"",headers:[],filePathRelative:null,git:{}}},5758:(e,t,a)=>{"use strict";a.r(t),a.d(t,{default:()=>l});const l={render:function(e,t){return null}}}}]);
