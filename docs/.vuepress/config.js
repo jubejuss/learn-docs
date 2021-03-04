@@ -1,7 +1,7 @@
 module.exports = {
 lang: "et",
-title: "Tere, Vuepress!",
-description: "See on mu esimene Vuepressi leht! Tegelt teine. Või kolmas.",
+title: "Dokuveeb",
+description: "Koolitööde dokumentatsioon.",
 base: "/learn-docs/",
 dest: "gh-pages",
 

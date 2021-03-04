@@ -5,6 +5,8 @@
 Installi esimene osa toimib täpselt nii, nagu Vuepressi lehel näidatud:  
 [https://vuepress2.netlify.app/guide/getting-started.html](https://vuepress2.netlify.app/guide/getting-started.html)
 
+Võib installida ametliku juhendi järgi või kasutades alljärgnevat
+
 ```sh
 mkdir vuepressifolderinimi
 cd vuepressifolderinimi
@@ -15,7 +17,6 @@ Seejärel initsialiseerid giti (mis küll ei ole kohustuslik) ja lood Node abil 
 Mõlemasse võiks sisestada sobiva info, kuid sobib ka vaikimisi pakutu.
 
 ```sh
-git init
 npm init
 ```
 
@@ -44,7 +45,15 @@ Lisa `.gitignore` (käsklus terminalis):
 echo 'node_modules\n.temp\n.cache' >> .gitignore
 ```
 
-Tee esimene dokument:
+Kontrolli igaks juhuks üle, et tekkinud `.gitignore` failis oleks kolme rida üksteise all:
+
+```bash
+node_modules
+.temp
+.cache
+```
+
+Loo esimene dokument:
 
 ```bash
 mkdir docs
@@ -59,7 +68,7 @@ npm run docs:dev
 
 ## Sisu
 
-Asenda docs kataloogis README.md-s olev sellega:
+Asenda `docs` kataloogis README.md-s olev sellega:
 
 ```markdown
 ---
@@ -74,7 +83,7 @@ home: true
 Liigu üleval menüüs, et jõuda soovitud sihtkohta.
 ```
 
-Loo juurkatalogi mõned folderid sisuga README.md  
+Loo `docs` katalogi mõned folderid sisuga README.md  
 Folderid loo sellised, millised soovid, ehk, mis lehekülgi sa luua tahad. Kuid võid algatuseks kasutada samu, mis siinsel lehel:
 
 ```bash
@@ -136,7 +145,7 @@ module.exports = {
   lang: "et",
   title: "Tere, Vuepress!",
   description: "See on mu esimene Vuepressi leht! Tegelt teine",
-  dest: "github-pages",
+  dest: "gh-pages",
 
   themeConfig: {
     logo: "https://vuejs.org/images/logo.png",
@@ -225,7 +234,23 @@ ning kasutame ka piltide vms lisamisel seda rada:
 ## Deploy
 
 Ja lõpuks saadame oma lehe laivi.  
-Esmalt tee endale Githubis repo: [Giti juhend](/learn-docs/vpdocs/#paigaldamine)  
+Esmalt tee endale Githubis repo.
+
+Github, kui uut repot teed, annab edasi valikud. Sina kasuta oma arvutis järgmist:
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch M main
+git remote add origin https://github.com/SINUNIMI/learn-docs-test.git
+git push -u origin main
+```
+
+vaata vajadusel lisa siit: : [Giti juhend](/learn-docs/git)
+
+Nüüd loo juurkataloogi folder `gh-pages`
+
 Seejärel tee juurkataloogi fail `deploy.sh` ja lisa sinna:
 
 ```bash

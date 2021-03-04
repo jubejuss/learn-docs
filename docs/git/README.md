@@ -1,12 +1,14 @@
 # Giti juhend
 
-Loo Githubis uus repo ja järgi edasisi juhendeid.
-Siinse, juba loodud lehe puhul kasuta seda:  
-**…or push an existing repository from the command line:(aga loomulikult oma andmetega)**
+Loo Githubis uus repo ja järgi edasisi juhendeid.  
+Github, kui uut repot teed, annab edasi valikud. Sina kasuta oma arvutis järgmist:
 
 ```bash
-git remote add origin https://github.com/sinunimi/reponimi.git
-git branch -M main
+git init
+git add .
+git commit -m "first commit"
+git branch M main
+git remote add origin https://github.com/SINUNIMI/learn-docs-test.git
 git push -u origin main
 ```
 
@@ -24,6 +26,9 @@ Siis lisa esimene commit:
 git add .
 git commit -m "my first commit"
 ```
+
+Võid proovida ka siin näidatut: [https://confluence.atlassian.com/bitbucketserverkb/src-refspec-master-does-not-match-any-error-when-pushing-to-repository-788727186.html](https://confluence.atlassian.com/bitbucketserverkb/src-refspec-master-does-not-match-any-error-when-pushing-to-repository-788727186.html)  
+Ja lõpuks aitab Google.
 
 ja siis jätka sealt, kus error sisse tuli.
 

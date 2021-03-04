@@ -6,19 +6,15 @@ set -e
 # build
 npm run docs:build
 
-# navigate into the build output directory
+# liigu dist folderisse
 cd gh-pages
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
+# initsieeri git
 git init
 git add .
 git commit -m 'deploy'
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# pushi reposse NB! VAATA ET ÕIGE NIMEGA AADRESSI PANED
 git push -f git@github.com:jubejuss/learn-docs.git master:gh-pages
 
 cd -
