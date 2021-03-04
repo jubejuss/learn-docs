@@ -38,7 +38,7 @@ Ja lisa `package.json` faili käivitusscriptid:
 
 (kui ei oska, vaata siinse dokumendi lõppu)
 
-Lisa temp ja `.gitignore` (käsklus terminalis):
+Lisa `.gitignore` (käsklus terminalis):
 
 ```bash
 echo 'node_modules\n.temp\n.cache' >> .gitignore
