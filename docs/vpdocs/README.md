@@ -13,8 +13,8 @@ cd vuepressifolderinimi
 ```
 
 Ehk, et lood folderi ja liigud sinna sisse.  
-Seejärel initsialiseerid giti (mis küll ei ole kohustuslik) ja lood Node abil `package.json` faili.
-Mõlemasse võiks sisestada sobiva info, kuid sobib ka vaikimisi pakutu.
+Seejärel lood Node abil `package.json` faili.
+Võid sisestada meelepärase info, kuid sobib ka vaikimisi pakutu.
 
 ```sh
 npm init
@@ -26,7 +26,7 @@ Nüüd installige VuePress:
 npm install -D vuepress@next
 ```
 
-Ja lisa `package.json` faili käivitusscriptid:
+Ja lisa `package.json` faili, sinna kus alul testskript, käivitusskriptid:
 
 ```json
 {
@@ -45,7 +45,7 @@ Lisa `.gitignore` (käsklus terminalis):
 echo 'node_modules\n.temp\n.cache' >> .gitignore
 ```
 
-Kontrolli igaks juhuks üle, et tekkinud `.gitignore` failis oleks kolme rida üksteise all:
+Kontrolli igaks juhuks üle, et tekkinud `.gitignore` failis oleks kolm rida üksteise all:
 
 ```bash
 node_modules
@@ -65,6 +65,15 @@ ja tõmba leht `package.json` faili lisatud scripti abil käima:
 ```bash
 npm run docs:dev
 ```
+
+Terminal näitab seepeale umbes sellist rida:
+
+```bash
+success VuePress webpack dev server
+ is listening at http://localhost:8080/learn-docs/
+```
+
+Hoides CMD-d või CTRL-i klahvi all ning klikates sellel aadressiribal, avaneb loodud veebileht.
 
 ## Sisu
 
@@ -236,22 +245,22 @@ ning kasutame ka piltide vms lisamisel seda rada:
 Ja lõpuks saadame oma lehe laivi.  
 Esmalt tee endale Githubis repo.
 
-Github, kui uut repot teed, annab edasi valikud. Sina kasuta oma arvutis järgmist:
+Github, kui uut repot teed, annab edasi valikud. Kasuta GitHubi poolt pakutavat esimest valikut, kuid mõnede lihtsustustega. Nimelt, kuna meil on projektis juba sisu olemas, siis ei ole seda Git'i soovituse esimest rida vaja ja kuna meil on rohkem sisu, siis lisame kõik vajaliku, ehk `git add .` Lisaks, vaata Git'i soovitusest ka täpne aadress, mida kasutada:
 
 ```bash
 git init
 git add .
 git commit -m "first commit"
-git branch M main
-git remote add origin https://github.com/SINUNIMI/learn-docs-test.git
+git branch -M main
+git remote add origin https://github.com/SINUNIMI/learn-docs.git
 git push -u origin main
 ```
 
 vaata vajadusel lisa siit: : [Giti juhend](/learn-docs/git)
 
-Nüüd loo juurkataloogi folder `gh-pages`
+Nüüd loo juurkataloogi folder `gh-pages`, kui sa seda enne ei teinud.
 
-Seejärel tee juurkataloogi fail `deploy.sh` ja lisa sinna:
+Seejärel tee juurkataloogi fail `deploy.sh` ja lisa sinna, **NB! OMA ANDMETEGA**:
 
 ```bash
 #!/usr/bin/env sh
@@ -271,7 +280,7 @@ git add .
 git commit -m 'deploy'
 
 # pushi reposse
-git push -f git@github.com:sinunimi/learn-docs.git master:gh-pages
+git push -f git@github.com:SINUNIMI/learn-docs.git master:gh-pages
 
 cd -
 ```
@@ -286,8 +295,23 @@ Lisaks võib `package.json` faili lisada ka skripti, mis selle sh faili käima t
 
 Seejärel saab githubis seadistada oma lehe end näitama. Klikka lahti oma repo sätted:
 ![gh-pages](/learn-docs/images/reposettings.png)  
-ja otsi sealt üles GitHub Pages:
+Võimalik, et kõik juba töötab nii nagu vaja, vajadusel säti gh-pages oksaks, mida kuvatakse. Vaata, et kuvataks gh-pages oksa ja root folderit:
 ![gh-pages](/learn-docs/images/gh-pages.png)
+
+Võimalik on ka ilma deploy.sh-ta variant, selleks vaata siinse juhendi alguses olevalt lingilt VuePress2 ametlikul lehel olevat juhendit.
+
+## SSH key error
+
+Error:
+
+```bash
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+```
+
+Kui on probleeme Giti turvalise ühendumisega, vaata SSH key seadistamist siit: [https://phoenixnap.com/kb/generate-ssh-key-windows-10#:~:text=By%20default%2C%20the%20system%20will,can%20choose%20more%20descriptive%20names.](https://phoenixnap.com/kb/generate-ssh-key-windows-10#:~:text=By%20default%2C%20the%20system%20will,can%20choose%20more%20descriptive%20names.)  
+ja siit:
+Genereeritud võtme lisamisjuhis GitHub'i siin: [https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
 ## Lõplik konfiguratsioon
 
@@ -355,3 +379,5 @@ module.exports = {
   }
 }
 ```
+
+Antud lehel on muutujad, mil silma peal hoida `/learn-docs/` ja `gh-pages` aadressi ja destfolderi nimetustena. Kui te seadistate oma lehe teisi nimetusi kasutades, siis peate ka need asjad ära muutma.
