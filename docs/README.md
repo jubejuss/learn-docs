@@ -22,4 +22,5 @@ actions:
 ## Siin õpilaste tööde lingid:
 
 [Kert-Morris](https://morrisu.github.io/learn-docs/)  
-[Simar](https://simmu12.github.io/learn-docs/)
+[Simar](https://simmu12.github.io/learn-docs/)  
+[Juhan Jakob](https://juhanjakob.github.io/learn-docs/)
