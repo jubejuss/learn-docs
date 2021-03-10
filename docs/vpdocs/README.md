@@ -12,6 +12,9 @@ mkdir vuepressifolderinimi
 cd vuepressifolderinimi
 ```
 
+mkdir = make directory  
+cd = change directory
+
 Ehk, et lood folderi ja liigud sinna sisse.  
 Seejärel lood Node abil `package.json` faili.
 Võid sisestada meelepärase info, kuid sobib ka vaikimisi pakutu.
@@ -197,7 +200,7 @@ Nagu näha, on lisatud ka külgmenüü ja lihtsaim moodus ongi teha seda automaa
 `ctrl+c` ja uuesti `npm run dev`.  
 Nüüd peaks lehel muudatused näha olema.
 
-## Logo muutmine
+## Piltide, sh logo muutmine
 
 Staatilised komponendid pannakse `.vuepress/public`folderisse.
 
@@ -219,6 +222,16 @@ Sealt loeb süsteem ise need välja:
 
 Tulemus:
 ![VuePress Logo](/learn-docs/images/kass.png)
+
+Kui pilt on samas folderis:
+kood:
+
+```markdown
+![Alt text](./kassu.png)
+```
+
+tulemus:  
+![Alt text](./kassu.png)
 
 ## Base
 
@@ -289,6 +302,12 @@ Lisaks võib `package.json` faili lisada ka skripti, mis selle sh faili käima t
 
 ```json
     "deploy": "sh 'deploy.sh'"
+```
+
+Ja nüüd võiks selle deploy käsu käivitada ka:
+
+```bash
+npm run deploy
 ```
 
 **NB! Vaata, et oleks sinu andmed**

@@ -35,6 +35,10 @@ dest: "gh-pages",
             text: 'GIT',
             link: '/git/',
         },
+        {
+            text: 'Näidis',
+            link: '/naidis/',
+        },
       ],
       sidebar: 'auto'
   },
