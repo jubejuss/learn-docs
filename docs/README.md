@@ -18,3 +18,8 @@ actions:
 # Siia lehele on koondatud ja koondatakse oma tööde dokumentatsioon.
 
 ## [Pagaldamisjuhis. Klikka siin või menüüpunktil DOCS](vpdocs/README.md)
+
+## Siin õpilaste tööde lingid:
+
+[Kert-Morris](https://morrisu.github.io/learn-docs/)  
+[Simar](https://simmu12.github.io/learn-docs/)
