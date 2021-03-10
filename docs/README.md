@@ -19,7 +19,7 @@ actions:
 
 ## [Pagaldamisjuhis. Klikka siin või menüüpunktil DOCS](vpdocs/README.md)
 
-## Siin õpilaste tööde lingid:
+## Õpilaste tööde lingid:
 
 [Kert-Morris](https://morrisu.github.io/learn-docs/)  
 [Simar](https://simmu12.github.io/learn-docs/)  
