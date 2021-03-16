@@ -217,7 +217,7 @@ Staatilised komponendid pannakse `.vuepress/public`folderisse.
 Sealt loeb süsteem ise need välja:
 
 ```markdown
-![VuePress Logo](/images/logo.png)
+![VuePress Logo](/learn-docs/images/kass.png)
 ```
 
 Tulemus:

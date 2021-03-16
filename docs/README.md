@@ -24,4 +24,6 @@ actions:
 [Kert-Morris](https://morrisu.github.io/learn-docs/)  
 [Simar](https://simmu12.github.io/learn-docs/)  
 [Juhan Jakob](https://juhanjakob.github.io/learn-docs/)  
-[Meelis](https://m2nnari.github.io/learn-docs/)
+[Meelis](https://m2nnari.github.io/learn-docs/)  
+[Jonas](https://jonastks.github.io/learn-docs/)  
+[Adam](https://adamawachi.github.io/learn-docs/)
