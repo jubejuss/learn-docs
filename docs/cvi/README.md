@@ -1,3 +1,7 @@
-# Prototüüpimine
+# Tunnusgraafika
 
-Siia lisame Prototüüpimise tunnist kõrva taha sobiva
+## Kolm logokavandit
+
+![logovalik](./logovalik.svg)
+
+Otsustasin valida esimese versiooni.
