@@ -8,9 +8,11 @@ Installi esimene osa toimib täpselt nii, nagu Vuepressi lehel näidatud:
 Võib installida ametliku juhendi järgi või kasutades alljärgnevat
 
 ```sh
-mkdir vuepressifolderinimi
-cd vuepressifolderinimi
+mkdir learn-docs
+cd learn-docs
 ```
+
+learn-docs asemel võib mis iganes nime panna, kuid antud juhend ja sätted on learn-docs-iga
 
 mkdir = make directory  
 cd = change directory
