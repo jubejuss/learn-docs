@@ -27,3 +27,4 @@ actions:
 [Meelis](https://m2nnari.github.io/learn-docs/)  
 [Jonas](https://jonastks.github.io/learn-docs/)  
 [Adam](https://adamawachi.github.io/learn-docs/)
+[Emilia](https://emiliaheero.github.io/learn-docs/)
